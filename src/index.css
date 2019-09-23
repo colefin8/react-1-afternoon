@@ -51,6 +51,10 @@ body {
   height: 270px;
 }
 
+.squarePB {
+  height: 225px;
+}
+
 .resultsBox {
   width: 360px;
   height: 20px;
