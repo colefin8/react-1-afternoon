@@ -10,12 +10,18 @@ class TopicBrowser extends Component{
 render(){
     return(
         <div>
-            <EvenandOdd/>
-            <FilterObject/>
-            <FilterString/>
-            <Palindrome/>
-            <Sum/>
-            <IsSquare/>
+            <div className="row">
+                <EvenandOdd/>
+                <FilterObject/>
+            </div>
+            <div className="row">
+                <FilterString/>
+                <Palindrome/>
+            </div>
+            <div className="row">
+                <Sum/>
+                <IsSquare/>
+            </div>
         </div>
         )
     }

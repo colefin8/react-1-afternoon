@@ -14,12 +14,16 @@ class IsSquare extends Component {
     }
 
     solve = (num) =>{
-        if (Math.sqrt(parseInt(num)) % 1 === 0){
-            this.setState({isSquare: "It's a perfect square!"})
+        if(!parseInt(num, 10)){
+            this.setState({isSquare: "Please enter a number"})
+            return
         } else {
-            this.setState({isSquare: "It's not a perfect square..."})
+            if (Math.sqrt(parseInt(num, 10)) % 1 === 0){
+            this.setState({isSquare: "It's a perfect square!"})
+            }   else {
+            this.setState({isSquare: `It's not a perfect square...`})
+            }
         }
-
     }
 
     render(){
